@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iNPUT elements, label and fieldset</title>
+    <style>
+        .box {
+            border: 2px solid lightgreen;
+            padding: 20px 40px;
+            width: 880px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <fieldset>
+    <legend>Personal Details</legend>
+    <label for="name">Name:</label>
+    <input type="name" maxlength="19" minlength="15">
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email">
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password">
+    <br><br>
+    <label for="male">Gender: Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" value="female" required>
+    <br><br>
+    Hobbies:
+    <input type="checkbox" name="hobby" value="Reading">Reading
+    <input type="checkbox" name="hobby" value="Coding">Coding
+    <br><br>
+    <label for="hobbies">DOB:</label>
+    <input type="DOB">
+
+    </fieldset>
+    </div>
+</body>
+</html>
