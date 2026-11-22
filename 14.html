@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested Table</title>
+    <style>
+        .table-container {
+            overflow-x: auto;
+            border: 2px solid lightgreen;
+            width: 880px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        inner {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Lab Batches</th>
+            <th>Faculty</th>
+            <th>Room</th>
+            <th>Time</th>
+        </tr>
+        
+         <tr>
+            <td>Fiday</td>
+
+            <td>
+                <table class="inner">
+                    <tr>
+                        <th>Batch</th>
+                        <th>System</th>
+                    </tr>
+
+                    <tr>
+                        <td>A1</td>
+                        <td>PC 1-20</td>
+                    </tr>
+
+                    <tr>
+                        <td>A2</td>
+                        <td>PC 21-40</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>Dr. Sharma</td>
+            <td>Lab 2</td>
+            <td>2-4 PM</td>
+        </tr>
+
+    </table>
+
+    </div>
+
+</body>
+</html>
